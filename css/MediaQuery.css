@@ -1,0 +1,213 @@
+@media (max-width: 1200px) {
+    .app .mixing .row > div .child {
+        height: 310px;
+    }
+}
+
+@media (max-width: 992px) {
+    .app {
+        border-radius: 0;
+        padding: 0px 0px 0;
+        margin-top: 0;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .sizeing {
+        box-shadow: 4px 0 10px #111;
+    }
+    .sizeing .navbar {
+        padding: 0 25px;
+    }
+    .app .info .image {
+        width: 280px;
+        height: 280px;
+        margin: 30px auto;
+        float: none;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    .app .info {
+        padding-top: 110px;
+    }
+    .app .info .text {
+        padding-left: 0;
+        text-align: center;
+    }
+    .app .info .text p {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+    .app .MyTasks {
+        padding: 110px 20px;
+    }
+    .ouer_servaces .row > div > div {
+        margin-bottom: 20px;
+    }
+    .ouer_servaces .row > div:nth-of-type(3) {
+        margin: auto;
+    }
+    .sizeing .navbar.toggel {
+        left: 0px;
+        right: 0px;
+        width: 100%;
+    }
+    .app .mixing .row > div .child {
+        height: 220px;
+    }
+    .wordPres .container header {
+        padding: 30px 0;
+    }
+    .wordPres .container header h2 {
+        font-size: 25px;
+        font-weight: 530;
+    }
+    .wordPres .container {
+        max-width: 85% !important;
+    }
+    .wordPres img {
+        height: 70vh;
+    }
+    .form .container {
+        max-width: 95%;
+    }
+}
+@media (max-width: 768px) {
+    .app .MyTasks {
+        padding: 110px 40px;
+    }
+    .app .Client .row .child {
+        margin-bottom: 20px;
+    }
+    .app .mixing .row > div .child {
+        height: 200px;
+    }
+    .app .mixing {
+        padding: 50px 20px;
+    }
+    .app .mixing header ul li {
+        font-size: 13px;
+    }
+    .app .mixing .overlay2 .container {
+        max-width: 90% !important;
+    }
+    .app .mixing .overlay2 .container .row > div .Description {
+        width: 60%;
+    }
+    .app .mixing .overlay2 .container .content1 .row > div:nth-of-type(2),
+    .app .mixing .overlay2 .container .content6 > .row > div:nth-of-type(2) {
+        padding: 0;
+    }
+    .app .mixing .overlay2 .container .content1 .row > div .carosal,
+    .app .mixing .overlay2 .container .content1 .row > div .youtype-video,
+    .app .mixing .overlay2 .container .content1 .row > div .imageer img {
+        height: 300px;
+    }
+    .app .mixing .overlay2 .container .content2 iframe,
+    .app .mixing .overlay2 .container .content3 img,
+    .app .mixing .overlay2 .container .content4 video,
+    .app .mixing .overlay2 .container .content5 iframe {
+        height: 450px;
+    }
+    .app .mixing .overlay2 .container .content4 video {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .app .mixing .overlay2 .container .content1 header h2,
+    .app .mixing .overlay2 .container .content2 header h2,
+    .app .mixing .overlay2 .container .content2 iframe .content3 header h2,
+    .app .mixing .overlay2 .container .content2 iframe .content4 header h2,
+    .app .mixing .overlay2 .container .content2 iframe .content5 header h2,
+    .app .mixing .overlay2 .container .content2 iframe .content6 header h2 {
+        font-style: 25px;
+        font-style: italic;
+        margin-bottom: 25px;
+        font-weight: 550;
+    }
+    .app
+        .mixing
+        .overlay2
+        .container
+        .content6
+        .row
+        .div_image
+        .row
+        > div
+        > div {
+        margin-bottom: 20px;
+    }
+    .wordPres .container header h2 {
+        font-size: 27px;
+        font-weight: 530;
+    }
+    .wordPres .container {
+        max-width: 90% !important;
+    }
+    .wordPres img {
+        height: 65vh;
+    }
+    .form .container .row .firest {
+        margin-bottom: 30px;
+    }
+    .form .container .row .sacand form > div.left button {
+        margin: 25px auto;
+        display: block;
+    }
+    .form {
+        padding: 70px 0 40px;
+    }
+    .pricing > div.container div.row > div:nth-child(1) > .child {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .app .info .image {
+        width: 320px;
+        height: 320px;
+        margin: auto;
+        float: none;
+        margin-bottom: 30px;
+    }
+    .app .info {
+        padding-top: 90px;
+    }
+    .app .info .text {
+        text-align: center;
+        padding-left: 0;
+    }
+    .app .info .text p {
+        width: 100%;
+    }
+    .app .info .text h4 {
+        left: -80px;
+    }
+    .app .info .text h1 {
+        font-size: 40px;
+    }
+    .app .MyTasks {
+        padding: 110px 20px;
+    }
+    footer .pairant {
+        padding: 0 20px;
+    }
+    footer .pairant .icons i {
+        width: 30px;
+        height: 34px;
+        margin: 0 5px;
+    }
+    .app .mixing .row > div .child {
+        height: 270px;
+    }
+    .wordPres .container header h2 {
+        font-size: 22px;
+        font-weight: 530;
+    }
+    .wordPres .container {
+        max-width: 95% !important;
+    }
+    .wordPres img {
+        height: 60vh;
+    }
+}

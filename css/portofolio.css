@@ -1,0 +1,530 @@
+@import './NavePare.css';
+/* start part of portofolio */
+.app > header
+{
+    padding:60px 70px;
+    border-top:2px solid #444;
+    border-bottom:2px solid #444;
+}
+.app > header h1{
+    font-size:40px;
+    color:#F5F5F5;
+    font-weight:650;
+    margin:0
+}
+/* end part of portofolio */
+
+/* start part of portofolio */
+.app .mixing
+{
+    padding:50px 50px;
+}
+.app .mixing header ul 
+{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    margin-bottom:60px
+}
+.app .mixing header ul li
+{
+    font-size:15px;
+    color:#aaa;
+    margin:0 10px;
+    font-weight:500;
+    cursor:pointer;
+    text-transform:capitalize;
+    transition:0.3s
+}
+.app .mixing header ul li:hover
+{
+    color:#fff
+}
+.app .mixing header ul li.active
+{
+    color:#fff
+}
+.app .mixing .row > div
+{
+    padding:0 8px;
+}
+.app .mixing .row > div .child
+{
+    position:relative;
+    height:350px;
+    width:100%;
+    overflow: hidden;
+    margin-bottom:16px;
+    border-radius:10px;
+    perspective:600px;
+}
+.app .mixing .row > div .child img
+{
+    width:100%;
+    height:100%;
+    transition:0.8s;
+    cursor:pointer;
+}
+.app .mixing .row > div > .child:hover img
+{
+    transform:scale(1.1);
+}
+.app .mixing .row > div .child h4,
+.app .mixing .row > div .child h5
+{
+    position: absolute;
+    top:20px;
+    left:20px;
+    padding:5px 12px;
+    background:#222;
+    border-radius:5px;
+    color:#eee;
+    font-size:15px;
+    font-weight:600
+}
+.app .mixing .row > div .child h5
+{
+    top:calc(100% - 35px);
+    padding:2px 6px;
+    font-size:12px;
+    font-weight:400;
+    opacity:0;
+    transition:0.8s;
+}
+.app .mixing .row > div .child i
+{
+    padding:7px 7px;
+    background:#111;
+    color:#007CED;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    border-radius: 5px;
+    opacity:0
+}
+.app .mixing .row > div .child:hover i,
+.app .mixing .row > div .child:hover h5
+{
+    opacity:1;
+}
+.app .mixing .overlay
+{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 50;
+    transition:0.6s;
+    visibility: hidden;
+    opacity: 0;
+}
+.app .mixing .overlay.toggle 
+{
+    visibility: visible;
+    opacity: 1;
+}
+.app .mixing .overlay > div
+{
+    cursor:pointer;
+    width:65%;
+    height:80vh;
+    background:#eee;
+    box-shadow:-5px -5px 5px rgba(0,0,0,0.5),
+                5px 5px 5px rgba(0,0,0,0.5)
+}
+.app .mixing .overlay > .times
+{
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:25px;
+    color:white;
+    cursor:pointer
+}
+.app .mixing .overlay > i:not(:first-of-type)
+ {
+    font-size:60px;
+    color:white;
+    position:absolute;
+    top:50%;
+    transform:translate(0,-50%);
+    cursor:pointer
+}
+.app .mixing .overlay > i.toggle
+{
+    display:none
+}
+.app .mixing .overlay > i:nth-of-type(2)
+{
+    left:40px
+}
+.app .mixing .overlay > i:nth-of-type(3)
+{
+    right:40px
+}
+.app .mixing .overlay > div iframe,
+.app .mixing .overlay > div img,
+.app .mixing .overlay > div video
+{
+    width:100%;
+    height:100%
+}
+.app .mixing .overlay2
+{
+    width:100%;
+    background:#222;
+    height:102vh;
+    overflow: scroll;
+    position:fixed;
+    top:0;
+    left:0;
+    padding:30px 0 10px;
+    z-index: 48;
+    transition:0.5s
+}
+.app .mixing .overlay2.toggle
+{
+    transform:translate(-100%,0)
+}
+.app .mixing .overlay2 .container
+{
+    margin-bottom:30px
+}
+.app .mixing .overlay2 .container .control
+{
+     text-align:right;
+     margin-bottom:30px;
+
+}
+.app .mixing .overlay2 .container .control i 
+{
+    font-size:20px;
+    width:37px;
+    height:37px;
+    text-align: center;
+    line-height: 37px;
+    color:white;
+    margin:0 4px;
+    background:#444;
+    border-radius:5px;
+    cursor:pointer;
+}
+.app .mixing .overlay2 .container .control i:nth-of-type(2)
+{
+    display: none;
+}
+.app .mixing .overlay2 .container .content1 header h2,
+.app .mixing .overlay2 .container .content2 header h2,
+.app .mixing .overlay2 .container .content3 header h2,
+.app .mixing .overlay2 .container .content4 header h2,
+.app .mixing .overlay2 .container .content5 header h2,
+.app .mixing .overlay2 .container .content6 header h2
+{
+    font-style: 35px;
+    color:#eee;
+    margin-bottom:30px;
+    text-transform:capitalize
+} 
+.app .mixing .overlay2 .container .content1 .row > div .carosal
+{
+    width:100%;
+    height:450px;
+    position:relative;
+    overflow:hidden;
+    margin-bottom:50px;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5)
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal ul
+{
+    width:100%;
+    position:absolute;
+    bottom:10px;
+    padding-right:20px;
+    text-align:right;
+    font-size:0
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal ul li
+{
+    width:15px;
+    height:15px;
+    margin:0 4px;
+    display:inline-block;
+    background:#aaa;
+    border-radius:50%;
+    cursor: pointer;
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal > i
+{
+    font-size:35px;
+    font-weight:500;
+    color:gray;
+    position: absolute;
+    cursor:pointer;
+    top:50%;
+    transform:translate(0,-50%);
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background:#aaa;
+    transition:0.5s
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal > i:nth-of-type(1)
+{
+    left:0px;
+    transform:translate(-100%,-50%);
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal > i:nth-of-type(2)
+{
+    right:0px;
+    transform:translate(100%,-50%);
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal:hover > i
+{
+    transform:translate(0,-50%)
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal .main
+{
+    width:400%;
+    height:100%;
+    position: relative;
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal .main img
+{
+    width:25%;
+    height:100%;
+    transition:0.8s;
+    position: absolute;
+    left:-25%;
+    top:0
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal .main img:nth-of-type(1)
+{
+    left:0%
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal .main img:nth-of-type(2)
+{
+    left:25%
+}
+.app .mixing .overlay2 .container.content1 .row > div .carosal .main img:nth-of-type(3)
+{
+    left:50%
+}
+.app .mixing .overlay2 .container .content1 .row > div .carosal .main img:nth-of-type(4)
+{
+    left:75%
+}
+.app .mixing .overlay2 .container .content1 .row > div .youtype-video
+{
+    width:100%;
+    height:400px;
+    margin-bottom:50px
+}
+.app .mixing .overlay2 .container .content1 .row > div .youtype-video iframe
+{
+    width:100%;
+    height:100%;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+}
+.app .mixing .overlay2 .container .content1 .row > div .imageer img
+{
+    width:100%;
+    height:390px;
+    margin-bottom:40px;
+    cursor:pointer;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+}
+.app .mixing .overlay2 .container .content1 .row > div .imageer p
+{
+    font-size:15px;
+    color:#eee;
+    margin-bottom:20px
+}
+.app .mixing .overlay2 .container .content1 .row > div:nth-of-type(2),
+.app .mixing .overlay2 .container .content6 > .row > div:nth-of-type(2)
+{
+    padding-left:50px
+}
+.app .mixing .overlay2 .container .row > div .Description
+{
+    width:100%;
+    padding:20px;
+    background:#444;
+    border:2px solid #666;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+}
+
+.app .mixing .overlay2 .container .row > div .Description h3
+{
+    font-size:18px;
+    color:#F5F5F5;
+    margin-bottom:24px;
+    font-weight:600
+}
+.app .mixing .overlay2 .container .row > div .Description ul li
+{
+    font-size:14px;
+    color:white;
+    margin:4px 0
+}
+.app .mixing .overlay2 .container .row > div .Description ul li a
+{
+    color:#007CED;
+    text-decoration:none;
+}
+.app .mixing .overlay2 .container .row > div .Description ul li i
+{
+    margin-right:10px;
+    color:#007CED
+}
+.app .mixing .overlay2 .container .row > div .Description p
+{
+    font-size:15px;
+    color:#aaa;
+    margin:15px 0
+}
+.app .mixing .overlay2 .container .row > div .Description ul:nth-of-type(2) li
+{
+    font-size:12px;
+    background:#666666;
+    color:white;
+    display:inline-block;
+    padding:4px 6px;
+    border-radius:5px;
+    margin:2px 5px 5px 0
+}
+.app .mixing .overlay2 .container .row > div .Description ul:nth-of-type(2)
+{
+    margin-bottom:20px
+}
+.app .mixing .overlay2 .container .row > div .Description ul:nth-of-type(3) li
+{
+    display:inline-block
+}
+.app .mixing .overlay2 .container .row > div .Description ul:nth-of-type(3) i
+{
+    width:30px;
+    height:30px;
+    text-align: center;
+    color:#eee;
+    background:#999999;
+    margin:0 5px;
+    border-radius:5px;
+    transition:0.3s;
+    line-height: 30px;
+}
+.app .mixing .overlay2 .container .row > div .Description ul:nth-of-type(3) i:hover
+{
+    color:#2383DA;
+    border:1px solid #2383DA;
+    cursor:pointer
+}
+.app .mixing .overlay2 .container .content2 iframe 
+{
+    width:100%;
+    height:500px
+}
+.app .mixing .overlay2 .container .content3 img
+{
+    width:100%;
+    height:600px;
+    margin-top:40px
+}
+.app .mixing .overlay2 .container .content4 video
+{
+    width:80%;
+    height:500px;
+    margin-top:50px;
+}
+.app .mixing .overlay2 .container .content5 iframe
+{
+    width:100%;
+    height:500px;
+    margin-top:40px
+}
+.app .mixing .overlay2 .container .content6 header h2
+{
+    margin:0 0 50px 10px
+}
+.app .mixing .overlay2 .container .content6 .row .div_image
+{
+    margin-bottom:40px
+}
+.app .mixing .overlay2 .container .content6 .row .div_image .row > div > div
+{
+    overflow: hidden;
+    border-radius:10px;
+    height:150px;
+    position: relative;
+}
+.app .mixing .overlay2 .container .content6 .row .div_image .row > div > div i
+{
+    font-size:50px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+    transition:0.5s;
+    cursor:pointer
+}
+.app .mixing .overlay2 .container .content6 .row .div_image .row > div > div:hover i
+{
+    opacity:1
+}
+.app .mixing .overlay2 .container .content6 .row .div_image .row > div > div:hover img
+{
+    transform:scale(1.2)
+}
+.app .mixing .overlay2 .container .content6 .row .div_image .row > div > div img
+{
+   width:100%;
+   height:100%;
+   transition:0.5s;
+   cursor:pointer
+}
+.app .mixing .overlay2 .container .content6 .row p
+{
+    font-size:15px;
+    margin-bottom:30px;
+    color:white
+}
+.app .mixing .overlay2 .container .content6 .row img
+{
+    width:100%;
+    height:400px;
+    margin-bottom:40px
+}
+.app .mixing .overlay2 .container .content6 .row iframe
+{
+    width:100%;
+    height:450px;
+    margin-bottom:30px
+}
+.app .mixing .overlay2 .container .content6 .row p:nth-of-type(2)
+{
+    font-size:14px;
+    border-left:2px solid #666;
+    padding:20px;
+    margin-left:20px;
+    color:white
+}
+.app .mixing .overlay2 .container .content6 .row p:nth-of-type(2) span
+{
+    color:#666666;
+    margin-top:20px;
+    display:block;
+    font-weight:600
+}
+/* end part of portofolio */

@@ -1,0 +1,663 @@
+body {
+    margin: 0;
+    background-image: url("../img/about/1.jpg");
+    background-attachment: fixed;
+    position: relative;
+    padding: 50px 50px;
+}
+.pixel
+{
+    width:65px;
+    height:65px;
+    background:rgb(0, 123, 255,0.4);
+    position:fixed;
+    top:0;
+    left:0;
+    border-radius:50%;
+    border:1px solid #111;
+    z-index:40;
+    transition:0.1s
+}
+body.toggle {
+    overflow: hidden;
+}
+* a:hover,
+* a
+{
+    text-decoration:none 
+}
+hr {
+    margin-top: 20px;
+    height: 1px;
+    background: #444;
+}
+body .UppButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 20;
+}
+body .UppButton i {
+    color: #aaa;
+    font-size: 30px;
+}
+body .loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body .loading > div {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #007beb80;
+    animation: loadding ease-in-out 1s infinite;
+}
+@keyframes loadding {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+.row {
+    margin: 0 !important;
+}
+.row > div
+{
+    position: unset;
+}
+body::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 15px;
+}
+.backbox > span {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.3);
+    border: 4px solid white;
+    border-radius: 23px;
+    z-index: -1;
+}
+.backbox > span:nth-child(1) {
+    width: 220px;
+    height: 170px;
+    top: -90px;
+    left: -90px;
+    transform: rotate(22deg);
+}
+.backbox > span:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: -90px;
+    left: 1000px;
+    transform: rotate(22deg);
+}
+.backbox > span:nth-child(3) {
+    width: 200px;
+    height: 140px;
+    top: 560px;
+    left: 1200px;
+    transform: rotate(22deg);
+}
+
+.backbox > span:nth-child(4) {
+    width: 200px;
+    height: 140px;
+    top: 560px;
+    left: 10px;
+    transform: rotate(22deg);
+}
+
+.backbox > span:nth-child(5) {
+    width: 200px;
+    height: 140px;
+    top: -10px;
+    left: 550px;
+    transform: rotate(22deg);
+}
+.app {
+    margin: auto;
+    background: #222222;
+    border-radius: 40px;
+    padding: 24px 0 0;
+    overflow: hidden;
+}
+.sizeing {
+    width: 100%;
+    height: 75px;
+}
+
+.sizeing .navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    z-index: 20;
+}
+.sizeing .navbar.toggel {
+    position: fixed;
+    height: 65px;
+    animation: nav 1.2s ease-in-out forwards;
+    left: 50px;
+    right: 50px;
+    width: calc(100% - 100px);
+    background: #222;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes nav {
+    0% {
+        top: -75px;
+    }
+    100% {
+        top: 0;
+    }
+}
+.sizeing .navbar .logo span {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background: #007ced;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+.sizeing .navbar .logo a {
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.sizeing .navbar .list > ul {
+    display: flex;
+}
+.sizeing .navbar .list > ul > li {
+    position: relative;
+}
+.sizeing .navbar .list > ul > li > a {
+    margin: 0 12px;
+    font-size: 15px;
+    font-weight: 450;
+    color: #999;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sizeing .navbar .list > ul > li > a:hover i {
+    color: white;
+}
+.sizeing .navbar .list > ul > li > a.active {
+    color: white;
+    border-bottom: 1px solid white;
+}
+.sizeing .navbar .list > ul > li > a::after {
+    content: attr(data-activ);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: capitalize;
+    color: white;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.4s;
+    font-weight: 450;
+    height: 100%;
+    width: 0;
+    box-sizing: content-box;
+}
+
+.sizeing .navbar .list > ul > li > a:hover::after {
+    width: 100%;
+}
+.sizeing .navbar .list > ul > li > div.list_down {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 20px;
+}
+.sizeing .navbar .list > ul > li:hover > .list_down ul li a {
+    animation: aaa ease-in-out 1.2s;
+    animation-fill-mode: forwards;
+}
+.sizeing .navbar .list > ul > li > .list_down ul {
+    display: none;
+    position: relative;
+}
+.sizeing .navbar .list > ul > li > .list_down ul::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    animation: aaa ease-in-out 1.2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.sizeing .navbar .list > ul > li:hover > .list_down ul {
+    display: block;
+}
+.sizeing .navbar .list > ul > li > .list_down ul li a {
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #999;
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+    font-weight: 550;
+    text-decoration: none;
+    transform: translate(-100px, 0);
+    opacity: 0;
+    visibility: hidden;
+}
+.sizeing .navbar .list > ul div.one ul li a {
+    width: 120px;
+}
+.sizeing .navbar .list > ul div.tow ul li a {
+    width: 200px;
+}
+.sizeing .navbar .list > ul div.thre ul li a {
+    width: 110px;
+}
+.sizeing .navbar .list > ul > li > .list_down ul li a:hover {
+    color: white;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(1) a {
+    animation-delay: 0.2s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(2) a {
+    animation-delay: 0.4s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(3) a {
+    animation-delay: 0.6s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(4) a {
+    animation-delay: 0.8s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(5) a {
+    animation-delay: 1s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(6) a {
+    animation-delay: 1.2s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(7) a {
+    animation-delay: 1.4s;
+}
+.sizeing .navbar .list > ul li:hover div.list_down ul li:nth-child(8) a {
+    animation-delay: 1.6s;
+}
+@keyframes aaa {
+    0% {
+        transform: translate(-100px, 0);
+        opacity: 0;
+        visibility: hidden;
+    }
+    50% {
+        transform: translate(70px, 0);
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.sizeing .navbar .ico {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.sizeing .navbar .right-colom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 60px 40px 0;
+    box-shadow: 0 -5px 10px #111;
+    background: #222;
+    overflow-y: scroll;
+    transform: translateX(300px);
+    transition: 0.5s;
+}
+.sizeing .navbar .right-colom.togel {
+    transform: translateX(0px);
+}
+.sizeing .navbar .right-colom > ul > li {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 450;
+    color: #999;
+    margin: 15px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+.sizeing .navbar .right-colom > ul > li.same::after {
+    content: "\f107";
+    position: absolute;
+    color: white;
+    font-family: "FontAwesome";
+    top: 0;
+    right: 0;
+}
+.sizeing .navbar .right-colom > ul > li.toggle > ul {
+    display: block;
+}
+.sizeing .navbar .right-colom > ul > li:hover,
+.sizeing .navbar .right-colom > ul > li:hover > a,
+.sizeing .navbar .right-colom > ul > li.active,
+.sizeing .navbar .right-colom > ul > li.active > a,
+.sizeing .navbar .right-colom > ul > li > ul li > a:hover {
+    color: white;
+}
+.sizeing .navbar .right-colom > ul > li > a,
+.sizeing .navbar .right-colom > ul > li > ul li > a {
+    width: 100%;
+    display: block;
+    color: #999;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.sizeing .navbar .right-colom > ul > li > ul {
+    display: none;
+}
+.sizeing .navbar .right-colom > .delet {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sizeing .navbar .right-colom > ul > li > ul {
+    padding-left: 20px;
+}
+.sizeing .navbar .right-colom > ul > li > ul li a {
+    margin: 5px 0;
+}
+aside.LeftNave.togel {
+    transform: translate(0);
+}
+aside.LeftNave {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #222222;
+    padding: 13px;
+    width: 300px;
+    height: 100vh;
+    z-index: 40;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8);
+    transform: translate(calc(100%));
+    transition: 0.5s;
+}
+aside.LeftNave .icon {
+    position: absolute;
+    cursor: pointer;
+    left: -48px;
+    top: 100px;
+    background: #222222;
+    border: 2px solid #444444;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-right: 0;
+    width: 48px;
+    height: 48px;
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside.LeftNave .icon span {
+    width: 100%;
+    height: 3px;
+    background: #aaa;
+    transition: 0.3s;
+}
+aside.LeftNave span.togel span:nth-child(2) {
+    display: none;
+}
+aside.LeftNave span.togel span:nth-child(1) {
+    transform-origin: left top;
+    transform: rotate(38deg);
+    margin-left: 2px;
+}
+aside.LeftNave span.togel span:nth-child(3) {
+    transform-origin: left bottom;
+    transform: rotate(-38deg);
+    margin-left: 2px;
+}
+aside.LeftNave > div {
+    overflow: scroll;
+    height: 100vh;
+    width: 100%;
+}
+aside.LeftNave div label {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+aside.LeftNave div label input {
+    width: 100%;
+    padding: 12px 17px;
+    border: 2px solid #444444;
+    outline: 0;
+    border: 2px solid #444444;
+    background: #333333;
+    border-radius: 5px;
+    color: white;
+}
+aside.LeftNave div label input::-webkit-input-placeholder {
+    color: #999999;
+    font-size: 15px;
+    font-style: italic;
+}
+aside.LeftNave div label button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    color: white;
+    background: 0;
+    outline: 0;
+    border: 0;
+    padding: 0 15px;
+}
+aside.LeftNave div > div:not(:last-child) {
+    margin-bottom: 10px;
+}
+aside.LeftNave div > div {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #444;
+    background: #333;
+    border-radius: 5px;
+}
+aside.LeftNave div > div h2 {
+    font-size: 17px;
+    color: #f5f5f5;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+}
+aside.LeftNave div > div h2::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: white;
+    top: calc(100% + 5px);
+    left: 0;
+    position: absolute;
+}
+aside.LeftNave div > div h2::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #007ced;
+    top: calc(100% + 5px);
+    left: 0;
+    position: absolute;
+}
+aside.LeftNave div > div ul li a {
+    color: #e5e5e5;
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+aside.LeftNave div > div ul li a:after {
+    content: "";
+    font-family: "FontAwesome";
+    color: #007ced;
+    position: absolute;
+    font-size: 10px;
+    left: 0;
+    top: 5px;
+}
+
+/* stat part of footer */
+footer .pairant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 55px;
+    height: 66px;
+    background: #252525;
+    border-top: 2px solid #333333;
+}
+footer .pairant .icons
+{
+    height: 35px;
+}
+footer .pairant .icons i {
+    width: 35px;
+    height: 100%;
+    background: #333333;
+    border-radius: 7px;
+    margin: 0 7px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow:2px 2px 3px rgba(0, 0, 0, 0.3)
+}
+footer .pairant .icons i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+footer .pairant .icons i::after {
+    content: "";
+    width: 150%;
+    height: 130%;
+    background: #999;
+    bottom: -100%;
+    left: -100%;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg) translate(-5px, 9px);
+}
+@keyframes aaaa {
+    0% {
+        transform: rotate(45deg) translate(-5px, 9px);
+    }
+    30% {
+        transform: rotate(45deg) translate(-5px, -52px);
+    }
+    60% {
+        transform: rotate(45deg) translate(-5px, -30px);
+    }
+    100% {
+        transform: rotate(45deg) translate(-5px, -39px);
+    }
+}
+footer .pairant .icons i:hover::after {
+    animation: aaaa ease-in-out 0.8s forwards;
+}
+footer .pairant .icons i:hover {
+    color: #333333;
+}
+footer .pairant .copy p {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0;
+    color:#aaa
+}
+/* end part of footer */

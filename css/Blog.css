@@ -1,0 +1,97 @@
+@import "./NavePare.css";
+.app > header {
+    padding: 60px 70px;
+    background-color: #252525;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+.app > header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+.app .galary {
+    padding: 70px;
+}
+.app .galary .row .pairant {
+    margin-bottom: 30px;
+}
+.app .galary .row .pairant .child1 {
+    margin-bottom: 17px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.app .galary .row .pairant .child1 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.app .galary .row .pairant .child1:hover img {
+    transform: scale(1.2);
+}
+.app .galary .row .pairant .child1 h5 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #eee;
+    background: #222;
+    z-index: 0;
+    border-radius: 4px;
+}
+.app .galary .row .pairant .child1 a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+}
+.app .galary .row .pairant .child1 a::after {
+    content: "\f0c5";
+    position: absolute;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "FontAwesome";
+    color: #eee;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.app .galary .row .pairant .child1:hover a {
+    display: block;
+}
+.app .galary .row .pairant > span {
+    display: block;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+.app .galary .row .pairant > a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #eee;
+    text-decoration: none;
+}
+.app .galary .row .all_posts {
+    margin-top: 30px;
+}
+.app .galary .row .all_posts a {
+    text-decoration: none;
+    color: #eee;
+    border-radius: 25px;
+    border: 2px solid #007ced;
+    background: #444;
+    padding: 8px 27px;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.app .galary .row .all_posts a:hover {
+    color: white;
+    background: #007ced;
+}

@@ -1,0 +1,108 @@
+@import "./NavePare.css";
+
+.wordPres .container header {
+    padding: 40px 0;
+}
+.wordPres .container header span {
+    font-size: 13px;
+    color: #999;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.wordPres .container header h2 {
+    font-size: 30px;
+    color: #f5f5f5;
+    font-weight: 600;
+}
+.wordPres img {
+    height: 100vh;
+    margin-bottom: 25px;
+}
+.wordPres .container:last-of-type .social {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333333;
+    border: 2px solid #555;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+.wordPres .container:last-of-type .social .left a {
+    font-size: 14px;
+    color: #9e9e9e;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.wordPres .container:last-of-type .social .left a i {
+    margin-right: 5px;
+}
+
+.wordPres .container:last-of-type .social .left a:hover {
+    color: #007cec;
+}
+.wordPres .container:last-of-type .social .right ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wordPres .container:last-of-type .social .right ul li {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 5px;
+    color: #eee;
+    transition: 0.4s;
+    background: #666;
+    margin: 0 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.wordPres .container:last-of-type .social .right ul li:hover {
+    color: #007cec;
+    border: 1px solid #007cec;
+}
+.wordPres .container:last-of-type .typs li {
+    display: inline-block;
+}
+.wordPres .container:last-of-type .typs li a {
+    font-size: 13px;
+    padding: 3px 5px;
+    background: #666666;
+    transition: 0.2s;
+    border-radius: 3px;
+    color: #eee;
+    font-weight: 450;
+}
+.wordPres .container:last-of-type .typs li a:hover {
+    background: #666666;
+    color: #313131;
+}
+.wordPres .container:last-of-type .typs {
+    margin-bottom: 70px;
+}
+.wordPres .container:last-of-type .hellow {
+    margin: 50px 0 100px;
+}
+.wordPres .container:last-of-type .hellow span {
+    font-size: 15px;
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+.wordPres .container:last-of-type .hellow h2 {
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.wordPres .container:last-of-type .hellow p {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+}

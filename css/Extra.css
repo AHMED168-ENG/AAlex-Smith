@@ -1,0 +1,487 @@
+@import "./NavePare.css";
+body .notific_list {
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #eee;
+    background: #111;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 10;
+}
+body .notific_list::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.app > header {
+    padding: 20px 70px 40px;
+    background: #252525;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+.app > header span {
+    font-size: 14px;
+    color: #aaaaaa;
+    display: block;
+    text-align: right;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.app > header h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 550;
+}
+.pricing {
+    padding: 50px 0;
+}
+.pricing h2,
+.app .Accordion .container .row > div .left h2,
+.app .Accordion .container .row > div .right h2 {
+    font-size: 24px;
+    color: #eee;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 550;
+    display: inline-block;
+}
+.pricing h2::before,
+.pricing h2::after,
+.app .Accordion .container .row > div .left h2::before,
+.app .Accordion .container .row > div .right h2::after,
+.app .Accordion .container .row > div .left h2::after,
+.app .Accordion .container .row > div .right h2::before {
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+}
+.pricing h2::before,
+.app .Accordion .container .row > div .left h2::before,
+.app .Accordion .container .row > div .right h2::before {
+    width: 100%;
+    background: #353535;
+}
+.pricing h2::after,
+.app .Accordion .container .row > div .left h2::after,
+.app .Accordion .container .row > div .right h2::after {
+    width: 40%;
+    background: #007ced;
+}
+.pricing > div.container > ul {
+    width: 470px;
+    margin: 0 auto 70px;
+    background: #c3c3c3dd;
+    display: flex;
+    border-radius: 35px;
+    position: relative;
+    height: 39px;
+}
+.pricing > div.container > ul::after {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #333;
+    border-radius: 30px;
+    z-index: 0;
+    transition: 0.5s;
+    position: absolute;
+}
+.pricing > div.container > ul.toggle::after {
+    left: 50%;
+}
+.pricing > div.container > ul li {
+    width: 50%;
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 580;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+.pricing > div.container > ul li:nth-of-type(2) {
+    left: 50%;
+}
+.pricing > div.container > ul li.toggle {
+    color: #eee;
+}
+.pricing > div.container div.row > div > .child {
+    background: #333;
+    border: 1px solid #444;
+    padding: 33px 0 40px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.pricing > div.container div.row > div > .child:hover {
+    transform: translate(0, -15px);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2),
+        -2px -2px 10px rgba(255, 255, 255, 0.2);
+}
+.pricing > div.container div.row > div:nth-of-type(2) > .child {
+    transform: translate(0, -15px);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2),
+        -2px -2px 5px rgba(255, 255, 255, 0.2);
+    border: 1px solid #666;
+}
+.pricing > div.container div.row > div:nth-of-type(2) > .child h5 {
+    border-bottom: 2px solid #007ced;
+    padding-bottom: 7px;
+}
+.pricing > div.container div.row > div:nth-of-type(2) > .child:hover {
+    transform: translate(0, -25px);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2),
+        -2px -2px 10px rgba(255, 255, 255, 0.2);
+}
+.pricing > div.container div.row > div > .child h5 {
+    font-size: 17px;
+    color: #d5d5d5;
+    font-weight: 550;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+.pricing > div.container div.row > div > .child span {
+    display: block;
+    font-size: 35px;
+    color: #d5d5d5;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pricing > div.container div.row > div > .child button {
+    padding: 8px 26px;
+    font-size: 15px;
+    color: #eee;
+    font-weight: 550;
+    text-transform: capitalize;
+    border: 2px solid #007ced;
+    box-sizing: content-box;
+    outline: 0;
+    background: transparent;
+    display: block;
+    border-radius: 25px;
+    margin: 0 auto 28px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.pricing > div.container div.row > div > .firest button {
+    border-color: #eee;
+}
+.pricing > div.container div.row > div > .child button:hover,
+.pricing > div.container div.row > div > .child button.toggle {
+    background: #007ced;
+}
+.pricing > div.container div.row > div > .firest button.toggle,
+.pricing > div.container div.row > div > .firest button:hover {
+    background: #eee;
+    color: #333;
+}
+.pricing > div.container div.row > div > .child ul li {
+    font-size: 14px;
+    color: #d5d5d5;
+    font-weight: 450;
+}
+.pricing > div.container div.row > div > .child ul li:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+.app .Accordion {
+    padding: 40px 0 50px;
+}
+.app .Accordion .container .row > div .left h2 {
+    font-size: 28px;
+    position: relative;
+}
+.app .Accordion .container .row > div .left .main_acordion {
+    border: 1px solid #444444;
+    margin: 15px 0;
+}
+.app .Accordion .container .row > div .left .main_acordion .question h4 {
+    position: relative;
+    padding: 16px 35px;
+    background: #444444;
+    font-size: 17px;
+    color: #eee;
+    font-weight: 550;
+    margin: 0;
+    cursor: pointer;
+}
+.app .Accordion .container .row > div .left .main_acordion .question h4.toggle {
+    background: transparent;
+}
+.app
+    .Accordion
+    .container
+    .row
+    > div
+    .left
+    .main_acordion
+    .question
+    h4.toggle::before {
+    content: "\f068";
+}
+.app
+    .Accordion
+    .container
+    .row
+    > div
+    .left
+    .main_acordion
+    .question
+    h4::before {
+    content: "\f067";
+    color: #eee;
+    font-family: "FontAwesome";
+    font-size: 12px;
+    left: -20px;
+    position: relative;
+}
+.app .Accordion .container .row > div .left .main_acordion .ansower p {
+    font-size: 14px;
+    color: #d5d5d5;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: 0.5s;
+    padding: 0 20px;
+}
+.app .Accordion .container .row > div .left .main_acordion .ansower p.toggel {
+    height: 77px;
+    padding: 0 0px 20px 20px;
+}
+.app .Accordion .container .row > div .right .artikl .content {
+    margin-top: 18px;
+}
+.app .Accordion .container .row > div .right .artikl .content ul {
+    display: inline-flex;
+    border: 2px solid #444;
+    border-bottom-color: #222;
+}
+.app .Accordion .container .row > div .right .artikl .content ul li {
+    font-size: 16px;
+    color: #eee;
+    padding: 7px 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.app .Accordion .container .row > div .right .artikl .content ul li.toggel {
+    background: #444444;
+}
+.app .Accordion .container .row > div .right .artikl .content p {
+    padding: 20px;
+    font-size: 13px;
+    color: #eee;
+    border: 2px solid #444;
+    display: none;
+    font-style: italic;
+    transition: 0.4s;
+}
+
+.app .Accordion .container .row > div .right .artikl .content p.toggel {
+    display: block;
+}
+/* --------------------------------------------- */
+.app .do_list {
+    margin-top: 50px;
+}
+.app .do_list .main_list .header h2 {
+    padding: 15px 20px;
+    background: #444;
+    font-size: 27px;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+.app .do_list .main_list .header h2::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+}
+.app .do_list .main_list .enter_task {
+    justify-content: space-between;
+}
+.app .do_list .main_list .enter_task .left {
+    width: 65%;
+    position: relative;
+}
+.app .do_list .main_list .enter_task .left input {
+    outline: 0;
+    border: 0;
+    padding: 14px 15px;
+    background: #eee;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+}
+.app .do_list .main_list .enter_task .left input::-webkit-input-placeholder {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.app .do_list .main_list .enter_task {
+    display: flex;
+    margin-bottom: 50px;
+}
+.app .do_list .main_list .enter_task .left {
+    position: relative;
+    display: flex;
+}
+.app .do_list .main_list .enter_task .left i {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    color: #222;
+}
+.app .do_list .main_list .enter_task .right {
+    position: relative;
+    width: 30%;
+    display: flex;
+}
+.app .do_list .main_list .enter_task .right .one {
+    width: 85%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: #eee;
+}
+.app .do_list .main_list .enter_task .right .one span {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #222;
+}
+.app .do_list .main_list .enter_task .right .tow {
+    width: 15%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6c757d;
+    color: #fff;
+    cursor: pointer;
+}
+.app .do_list .main_list .enter_task .right .down_menuo {
+    position: absolute;
+    background: gray;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.app .do_list .main_list .enter_task .right .down_menuo.toggle {
+    visibility: visible;
+    opacity: 1;
+}
+.app .do_list .main_list .enter_task .right .down_menuo ul li {
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 550;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.app .do_list .main_list .enter_task .right .down_menuo ul li.toggle {
+    background: #2f2e2e;
+    color: white;
+}
+.app
+    .do_list
+    .main_list
+    .enter_task
+    .right
+    .down_menuo
+    ul
+    li:not(:last-of-type) {
+    border-bottom: 2px solid #555;
+}
+.app .do_list .main_list .content .no_task {
+    width: 100%;
+    height: 60px;
+    background: #aeaeae;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+.app .do_list .main_list .content .task {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background: #aeaeae;
+    overflow: hidden;
+}
+.app .do_list .main_list .content .task:not(:last-of-type) {
+    border-bottom: 2px solid #fff;
+}
+.app .do_list .main_list .content .task:hover i,
+.app .do_list .main_list .content .task:hover span {
+    transform: translate(0);
+}
+.app .do_list .main_list .content .task i {
+    font-size: 25px;
+    padding: 10px 10px;
+    font-weight: 500;
+    background: gray;
+    transform: translateX(-60px);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.app .do_list .main_list .content .task span {
+    font-size: 18px;
+    color: #222;
+    text-transform: capitalize;
+    font-weight: 500;
+    transform: translateX(-40px);
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.app .do_list .main_list .content .task span.toggle {
+    text-decoration: line-through;
+}
+.app .do_list .main_list .control {
+    width: 100%;
+    background: #444444;
+    height: 60px;
+    margin-bottom: 70px;
+}
+.app .do_list .main_list .control > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+.app .do_list .main_list .control > div span {
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    background: gray;
+    margin-left: 10px;
+}

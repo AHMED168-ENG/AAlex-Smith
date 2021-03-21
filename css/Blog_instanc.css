@@ -1,0 +1,318 @@
+@import "./NavePare.css";
+.app > header {
+    padding: 60px 70px;
+    background-color: #252525;
+}
+.app > header h1 {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 550;
+    color: #f5f5f5;
+}
+.app > header span {
+    color: #eee;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 20px;
+}
+.app .instanc .img_content img {
+    height: 600px;
+    width: 100%;
+}
+.app .instanc .container .information .text1 {
+    padding: 50px 0 0;
+}
+.app .instanc .container .information .text1 p {
+    font-size: 15px;
+    font-weight: 550;
+    color: #d5d5d5;
+}
+.app .instanc .container .information .text1 > iframe {
+    width: 100%;
+    height: 450px;
+    margin: 30px 0;
+}
+.app .instanc .container .information .text1 > div.row iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+}
+.app .instanc .container .information .text2 > div.row iframe {
+    width: 100%;
+    height: 250px;
+    margin: 10px 0 30px;
+}
+.app .instanc .container .information .text1 p:last-of-type {
+    margin-bottom: 0px;
+}
+.app .instanc .container .popUp {
+    width: 100%;
+    height: 487px;
+}
+.app .instanc .container .popUp img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.app .instanc .container .popUp .show {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+    transition: 0.5s;
+}
+.app .instanc .container .popUp .toggle {
+    opacity: 1;
+    visibility: visible;
+}
+.app .instanc .container .popUp .show > div {
+    width: 85%;
+    height: 85vh;
+    background: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6), -4px -4px 5px rgba(0, 0, 0, 0.6);
+}
+.app .instanc .container .information .text2 p {
+    font-size: 15px;
+    color: #d5d5d5;
+}
+.app .instanc .container .information .text2 {
+    padding: 40px 0;
+}
+.app .instanc .container .information .text2 p:nth-of-type(3) {
+    margin: 40px 0 40px 50px;
+    border-left: 2px solid #999;
+    padding: 20px;
+    font-style: italic;
+}
+.app .instanc .container .information .text2 p:nth-of-type(3) span {
+    color: #999;
+    display: block;
+    margin-top: 15px;
+}
+.app .instanc .container .information .links {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333333;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+}
+.app .instanc .container .information .links .left a {
+    margin-right: 7px;
+    color: #9e9e9e;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.app .instanc .container .information .links .left a:hover {
+    color: #0198ca;
+}
+.app .instanc .container .information .links .left a i {
+    margin-right: 7px;
+}
+.app .instanc .container .information .links .right ul {
+    display: flex;
+}
+.app .instanc .container .information .links .right ul li {
+    margin: 0 5px;
+    width: 25px;
+    height: 25px;
+    background: #666;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+.app .instanc .container .information .links .right ul li:hover {
+    border: 1px solid #0198ca;
+    color: #0198ca;
+}
+.app .instanc .container .information .types {
+    margin: 40px 0 50px;
+}
+.app .instanc .container .information .types a {
+    color: #eee;
+    background: #666666;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.app .instanc .container .information .types a:hover {
+    color: #363636;
+}
+.app .instanc .container .information .explin {
+    margin-bottom: 30px;
+}
+.app .instanc .container .information .explin a {
+    font-size: 15px;
+    color: #999;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.app .instanc .container .information .explin a:hover {
+    color: #eee;
+}
+.app .instanc .container .information form header h2 {
+    font-size: 23px;
+    color: #eee;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 550;
+    display: inline-block;
+}
+.app .instanc .container .information form header h2::before,
+.app .instanc .container .information form header h2::after {
+    top: calc(100% + 7px);
+    left: 0;
+    position: absolute;
+    content: "";
+    height: 2px;
+}
+.app .instanc .container .information form header h2::before {
+    width: 100%;
+    background: #353535;
+}
+.app .instanc .container .information form header h2::after {
+    width: 30%;
+    background: #007ced;
+}
+.app .instanc .container .information form > div {
+    position: relative;
+    border: 2px solid gray;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+.app .instanc .container .information form .massage {
+    height: 180px;
+}
+.app .instanc .container .information form .input::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 1;
+    height: calc(100% + 4px);
+    transition: 0.5s;
+    width: 0;
+    border: 0;
+}
+.app .instanc .container .information form .input.toggle::after {
+    width: calc(100% + 4px);
+    border: 2px solid #007ced;
+    border-radius: 6px;
+}
+.app .instanc .container .information form .input.toggle1::after {
+    border-color: #ff4e4e;
+}
+.app .instanc .container .information form .massage textarea {
+    width: 100%;
+    z-index: 2;
+    height: 180px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    resize: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    color: #eee;
+}
+.app
+    .instanc
+    .container
+    .information
+    form
+    .massage
+    textarea::-webkit-input-placeholder,
+.app
+    .instanc
+    .container
+    .information
+    form
+    > div
+    input::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.app .instanc .container .information form > div > input {
+    width: 100%;
+    padding: 7px 15px;
+    display: block;
+    background: transparent;
+    outline: 0;
+    color: #eee;
+    border: 0;
+}
+body .notification {
+    padding: 3px 12px;
+    position: absolute;
+    background: #ff6161;
+    z-index: 10;
+    font-size: 14px;
+}
+body .notification::after {
+    content: "";
+    border-left: 15px solid #ff6161;
+    border-right: 0px solid blue;
+    border-top: 15px solid transparent;
+    border-bottom: 0px solid yellow;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+.app .instanc .container .information form > div i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.app .instanc .container .information form > div i.toggle {
+    color: #007ced;
+}
+.app .instanc .container .information form > input {
+    display: inline;
+    margin: 10px 10px 10px 0px;
+    cursor: pointer;
+}
+.app .instanc .container .information form > label {
+    color: #eee;
+    font-size: 14px;
+    font-weight: 450;
+    cursor: pointer;
+}
+.app .instanc .container .information form > button {
+    padding: 7px 17px;
+    border-radius: 25px;
+    background: #333;
+    border: 2px solid #007ced;
+    font-size: 14px;
+    display: block;
+    margin: 20px 0 40px;
+    transition: 0.5s;
+}
+.app .instanc .container .information form > button a {
+    color: #eee;
+}
+.app .instanc .container .information form > button:hover {
+    background: #007ced;
+}

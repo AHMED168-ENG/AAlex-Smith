@@ -1,0 +1,453 @@
+@import "./NavePare.css";
+body .notification {
+    padding: 4px 10px;
+    color: #eee;
+    background: #ff4e4e;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 14px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+body .notification::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #ff4e4e;
+    border-right: 10px solid transparent;
+    left: 40px;
+}
+.app .info {
+    padding: 120px 0 50px;
+}
+
+.app .info .image {
+    width: 330px;
+    height: 330px;
+    float: right;
+    background: #444444;
+    border-radius: 50%;
+    padding: 20px;
+}
+.app .info .image > div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.app .info .image > div img {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 350px;
+    height: 350px;
+    z-index: 10;
+}
+.app .info .text {
+    padding-left: 30px;
+}
+.app .info .text h4 {
+    color: #d5d5d5;
+    font-size: 21px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.app .info .text h4 span {
+    color: white;
+    font-size: 19px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #9999;
+    position: relative;
+}
+.app .info .text h4 span::after {
+    position: absolute;
+    content: "";
+    height: 110%;
+    width: 1px;
+    background: #fff;
+    top: 50%;
+    right: -10px;
+    transform: translate(0, -50%);
+    margin-left: 5px;
+}
+.app .info .text h1 {
+    color: #f5f5f5;
+    font-size: 50px;
+    margin-bottom: 24px;
+    font-weight: 550;
+}
+.app .info .text p {
+    font-size: 16px;
+    color: #d5d5d5;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.app .info .text button {
+    padding: 7px 25px;
+    border: 2px solid #007ced;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    background: #4444;
+    text-transform: capitalize;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.app .info .text button:nth-of-type(2) {
+    border-color: #d5d5d5;
+}
+.app .info .text button:nth-of-type(2):hover {
+    background: #d5d5d5;
+    color: #222;
+}
+.app .info .text button:nth-of-type(1):hover {
+    background: #007ced;
+}
+/* start part of what i do */
+.app .MyTasks {
+    padding: 60px 70px 50px;
+}
+.app .MyTasks h2,
+.app .Testimonials h2,
+.app .Client h2,
+.app .ouer_servaces h2 {
+    display: inline-block;
+    color: #f5f5f5;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 60px;
+    font-size: 22px;
+    font-weight: 550;
+}
+.app .MyTasks h2::before,
+.app .Testimonials h2::before,
+.app .Client h2::before,
+.app .ouer_servaces h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: calc(100% + 5px);
+    background: #9999;
+    left: 0;
+}
+.app .MyTasks h2::after,
+.app .Testimonials h2::after,
+.app .Client h2::after,
+.app .ouer_servaces h2::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    top: calc(100% + 5px);
+    background: #007ced;
+    left: 0;
+}
+.app .MyTasks .row .pairant {
+    display: flex;
+    margin-bottom: 25px;
+}
+.app .MyTasks .row .pairant .left {
+    width: 15%;
+}
+.app .MyTasks .row .pairant .left i {
+    font-size: 35px;
+    color: #007ced;
+}
+.app .MyTasks .row .pairant .right {
+    width: 85%;
+}
+.app .MyTasks .row .pairant .right h4 {
+    font-size: 19px;
+    margin-bottom: 7px;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+.app .MyTasks .row .pairant .right p {
+    font-size: 15px;
+    color: #d5d5d5;
+    line-height: 1.4;
+    font-style: italic;
+}
+.app .MyTasks .row > div {
+    position: unset !important;
+}
+
+/* end part of what i do */
+
+/* start part of Testimonials */
+.app .Testimonials {
+    padding: 50px 70px;
+}
+.app .Testimonials h2 {
+    margin-bottom: 20px;
+}
+.app .Testimonials .pairant .items {
+    padding: 0 30px;
+}
+.app .Testimonials .pairant .items .componant {
+    background-color: #282828;
+    border-radius: 8px;
+    border: 2px solid #444;
+    padding: 30px 20px 20px 60px;
+    position: relative;
+}
+.app .Testimonials .owl-stage-outer {
+    padding: 50px 0 20px !important;
+}
+.app .Testimonials .owl-dot {
+    outline: 0;
+}
+.app .Testimonials .owl-dot span {
+    height: 2px;
+    width: 25px;
+    margin: 20px 4px;
+}
+.app .Testimonials .owl-dot span:hover {
+    background: white !important;
+}
+.app .Testimonials .owl-dot.active span {
+    width: 40px;
+    background: #007ced;
+}
+.app .Testimonials .pairant .items {
+    position: relative;
+}
+.app .Testimonials .pairant .items i {
+    font-size: 40px;
+    color: #454545;
+    right: 0px;
+    bottom: -20px;
+    position: absolute;
+}
+.app .Testimonials .pairant .items .componant img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-40%, -40%);
+}
+.app .Testimonials .pairant .items .componant p:first-of-type {
+    color: #d5d5d5;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+    position: relative;
+}
+.app .Testimonials .pairant .items .componant p:first-of-type i {
+    position: absolute;
+    left: -37px;
+    top: 75px;
+    color: #454545;
+    font-size: 25px;
+}
+.app .Testimonials .pairant .items .componant h5 {
+    color: #e5e5e5;
+    font-size: 15px;
+}
+.app .Testimonials .pairant .items .componant p:last-of-type {
+    font-size: 14px;
+    color: #d5d5d5;
+    text-transform: capitalize;
+}
+/* end part of Testimonials */
+
+/* start part of Clients */
+.app .Client {
+    padding: 20px 50px;
+}
+.app .Client .row .child:hover {
+    transform: translate(0, -10px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.app .Client .row .child {
+    width: 100%;
+    padding: 30px 0 10px;
+    text-align: center;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background: #333333;
+    transition: 0.4s;
+}
+.app .Client .row .child i {
+    color: #007ced;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.app .Client .row .child h5 {
+    font-size: 17px;
+    color: #d5d5d5;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+.app .Client .row .child span {
+    font-size: 40px;
+    color: white;
+}
+
+/* end part of Clients */
+
+/* start part of ouer_servaces */
+.ouer_servaces {
+    padding: 60px 50px;
+}
+.ouer_servaces h2 {
+    margin-bottom: 20px;
+}
+.ouer_servaces .row > div > div {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 5px 10px;
+    background: #333;
+    text-align: center;
+}
+.ouer_servaces .row > div > div span {
+    position: absolute;
+    background: #000;
+    transition: 0.5s;
+}
+.ouer_servaces .row > div > div span:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 4px;
+}
+.ouer_servaces .row > div > div span:nth-of-type(2) {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+}
+.ouer_servaces .row > div > div span:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+    height: 0;
+    width: 4px;
+}
+.ouer_servaces .row > div > div span:nth-of-type(4) {
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+}
+.ouer_servaces .row > div > div:hover span:nth-of-type(1),
+.ouer_servaces .row > div > div:hover span:nth-of-type(3) {
+    height: 100%;
+}
+.ouer_servaces .row > div > div:hover span:nth-of-type(4),
+.ouer_servaces .row > div > div:hover span:nth-of-type(2) {
+    width: 100%;
+}
+.ouer_servaces .row > div > div::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    height: 200px;
+    transform: rotate(-45deg) translateY(-80%);
+    left: -200px;
+    top: -91px;
+    filter: blur(2px);
+}
+.ouer_servaces .row > div > div:hover::after {
+    height: 200px;
+    transform: rotate(-45deg) translateY(220%);
+}
+.ouer_servaces .row > div > div h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #aaa;
+    font-family: serif;
+    text-transform: capitalize;
+    font-weight: 550;
+    text-shadow: -1px -1px 0px white, 0px 1px 0px white, 0px 2px 0px white,
+        0px 3px 0px white, 0px 4px 5px white;
+}
+.ouer_servaces .row > div > div p {
+    font-size: 16px;
+    color: #777;
+    font-weight: 450;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.ouer_servaces .row > div > div i {
+    font-size: 22px;
+    margin: 0 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+/* end part of ouer_servaces */
+
+/* stat part of footer */
+footer .pairant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 55px;
+    height: 66px;
+    background: #252525;
+    border-top: 2px solid #333333;
+}
+footer .pairant .icons i {
+    width: 35px;
+    height: 35px;
+    background: #333333;
+    border-radius: 7px;
+    margin: 0 7px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+footer .pairant .icons i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+footer .pairant .icons i::after {
+    content: "";
+    width: 150%;
+    height: 130%;
+    background: #999;
+    bottom: -100%;
+    left: -100%;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg) translate(-5px, 9px);
+}
+@keyframes aaaa {
+    0% {
+        transform: rotate(45deg) translate(-5px, 9px);
+    }
+    30% {
+        transform: rotate(45deg) translate(-5px, -52px);
+    }
+    60% {
+        transform: rotate(45deg) translate(-5px, -30px);
+    }
+    100% {
+        transform: rotate(45deg) translate(-5px, -39px);
+    }
+}
+footer .pairant .icons i:hover::after {
+    animation: aaaa ease-in-out 0.8s forwards;
+}
+footer .pairant .icons i:hover {
+    color: #333333;
+}
+footer .pairant .copy p {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+/* end part of footer */
